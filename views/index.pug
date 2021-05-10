@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title
+  form(action='/')
+    input(type='text', name='search', value='')
+    input(type='submit', value='Submit')
+
+
+  each image in gifs
+    img(src=image)
+
